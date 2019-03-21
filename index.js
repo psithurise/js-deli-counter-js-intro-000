@@ -19,7 +19,7 @@ function currentLine(line) {
   //"The line is currently: 1. Ada, 2. Grace"
   //if noone, "The line is currently empty"
   if(!Array.isArray(line) || !line.length)
-    return "The line is currently empty"
+    return "The line is currently empty."
   else {
     var arr = []
     for(let i = 0; i < line.length; i++) {
