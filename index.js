@@ -1,7 +1,7 @@
 function takeANumber(line, name) {
   //console.log "Welcome, [name]. You are number [line] in line."
   line.push(name)
-  return `Welcome, ${name}, you are number ${line.length+1} in line.`
+  return `Welcome, ${name}, you are number ${line.length} in line.`
 }
 
 function nowServing(line) {
@@ -9,11 +9,8 @@ function nowServing(line) {
   //if noone in line, return "There is nobody waiting to be served!"
   if(!Array.isArray(line) || !line.length)
     return "There is nobody waiting to be served!"
-  else {
-    let serving = line.find()
-    line.shift()
-    return `Currently serving ${serving}.`
-  }
+  else 
+    return `Currently serving ${line.shift()}.`
 }
 
 function currentLine(line) {
