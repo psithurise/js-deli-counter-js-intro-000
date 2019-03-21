@@ -9,7 +9,7 @@ function nowServing(line) {
   //if noone in line, return "There is nobody waiting to be served!"
   if(!Array.isArray(line) || !line.length)
     return "There is nobody waiting to be served!"
-  else 
+  else
     return `Currently serving ${line.shift()}.`
 }
 
